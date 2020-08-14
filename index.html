@@ -1,0 +1,1309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="vendors/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Grocery store</title>
+  </head>
+  <body>
+    <header>
+      <div id="categories" class="drawer-wrapper left">
+        <span class="bars-icon toggle-drawer"></span>
+        <div class="drawer">
+          <h3>Shop categories</h3>
+          <div class="tree-menu">
+            <ul>
+              <li class="has-child">
+                <a href="#"
+                  ><span>Alcoholic beverages</span
+                  ><span><i class="fas fa-chevron-right"></i></span
+                ></a>
+                <ul>
+                  <li class="back">
+                    <a href="#"><i class="fas fa-chevron-left"></i> Main Menu</a>
+                  </li>
+                  <li class="title">Alcoholic beverages</li>
+                  <li><a href="#">Wiskey</a></li>
+                  <li><a href="#">Vodka</a></li>
+                  <li><a href="#">Gin</a></li>
+                  <li><a href="#">Rum</a></li>
+                </ul>
+              </li>
+              <li class="has-child">
+                <a href="#"
+                  ><span>Baby products</span
+                  ><span><i class="fas fa-chevron-right"></i></span
+                ></a>
+                <ul>
+                  <li class="back">
+                    <a href="#"><i class="fas fa-chevron-left"></i> Main Menu</a>
+                  </li>
+                  <li class="title">Baby products</li>
+                  <li><a href="#">Toys</a></li>
+                  <li><a href="#">Foods</a></li>
+                  <li><a href="#">Cosmetics</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#"
+                  ><span>Breads & bakery</span
+                  ><span><i class="fas fa-chevron-right"></i></span
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><span>Baking ingredients</span
+                  ><span><i class="fas fa-chevron-right"></i></span
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><span>Books, newspapers, & magazines</span
+                  ><span><i class="fas fa-chevron-right"></i></span
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><span>Cigarettes & other tobacco</span
+                  ><span><i class="fas fa-chevron-right"></i></span
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><span>Confections & candies</span
+                  ><span><i class="fas fa-chevron-right"></i></span
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><span>Cosmetics</span
+                  ><span><i class="fas fa-chevron-right"></i></span
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><span>Dairy products and eggs</span
+                  ><span><i class="fas fa-chevron-right"></i></span
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><span>Delicatessen foods</span
+                  ><span><i class="fas fa-chevron-right"></i></span
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><span>Diet foods</span
+                  ><span><i class="fas fa-chevron-right"></i></span
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><span>Dressings and Sauces</span
+                  ><span><i class="fas fa-chevron-right"></i></span
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><span>Electrical products</span
+                  ><span><i class="fas fa-chevron-right"></i></span
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><span>Feminine hygiene products</span
+                  ><span><i class="fas fa-chevron-right"></i></span
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><span>Frozen foods & crushed ice</span
+                  ><span><i class="fas fa-chevron-right"></i></span
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><span>Fresh produce, fruits & vegetables</span
+                  ><span><i class="fas fa-chevron-right"></i></span
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><span>House-cleaning products</span
+                  ><span><i class="fas fa-chevron-right"></i></span
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="mask"></div>
+      </div>
+      <div id="logo">Grocery</div>
+      <div class="search">
+        <select name="departments">
+          <option value="all">All</option>
+          <option value="fruits-and-vegatables">Fruits & Vegatables</option>
+          <option value="veverage">Beverage</option>
+          <option value="Cheese">Cheese</option>
+        </select>
+        <input type="search" name="search" />
+        <button>
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+      <div class="user">Hello, <a href="#">Sign in</a></div>
+      <div id="shopping-cart" class="drawer-wrapper right">
+        <div class="cart toggle-drawer">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+            <path
+              fill="currentColor"
+              d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z"
+            ></path>
+          </svg>
+          <span>20</span>
+        </div>
+        <div class="drawer">
+          <h3>Shopping Cart</h3>
+          <ul class="cart-items">
+            <li class="item">
+              <h4>H.E.B Brown Sugar</h4>
+              <div class="row">
+                <div class="details">
+                  <span class="price">6$</span>
+                  <span class="quantity">
+                    <button class="increase rounded">-</button>
+                    1
+                    <button class="decrease rounded">+</button>
+                  </span>
+                  <span class="total">6$</span>
+                </div>
+                <button class="remove rounded danger">&times;</button>
+              </div>
+            </li>
+            <li class="item">
+              <h4>Stella Parmesan cheese</h4>
+              <div class="row">
+                <div class="details">
+                  <span class="price">8$</span>
+                  <span class="quantity">
+                    <button class="minus rounded">-</button>
+                    1
+                    <button class="plus rounded">+</button>
+                  </span>
+                  <span class="total">8$</span>
+                </div>
+                <button class="remove rounded danger">&times;</button>
+              </div>
+            </li>
+            <li class="item">
+              <h4>Stella Parmesan cheese</h4>
+              <div class="row">
+                <div class="details">
+                  <span class="price">8$</span>
+                  <span class="quantity">
+                    <button class="minus rounded">-</button>
+                    1
+                    <button class="plus rounded">+</button>
+                  </span>
+                  <span class="total">8$</span>
+                </div>
+                <button class="remove rounded danger">&times;</button>
+              </div>
+            </li>
+            <li class="item">
+              <h4>Stella Parmesan cheese</h4>
+              <div class="row">
+                <div class="details">
+                  <span class="price">8$</span>
+                  <span class="quantity">
+                    <button class="minus rounded">-</button>
+                    1
+                    <button class="plus rounded">+</button>
+                  </span>
+                  <span class="total">8$</span>
+                </div>
+                <button class="remove rounded danger">&times;</button>
+              </div>
+            </li>
+            <li class="item">
+              <h4>Stella Parmesan cheese</h4>
+              <div class="row">
+                <div class="details">
+                  <span class="price">8$</span>
+                  <span class="quantity">
+                    <button class="minus rounded">-</button>
+                    1
+                    <button class="plus rounded">+</button>
+                  </span>
+                  <span class="total">8$</span>
+                </div>
+                <button class="remove rounded danger">&times;</button>
+              </div>
+            </li>
+            <li class="item">
+              <h4>Stella Parmesan cheese</h4>
+              <div class="row">
+                <div class="details">
+                  <span class="price">8$</span>
+                  <span class="quantity">
+                    <button class="minus rounded">-</button>
+                    1
+                    <button class="plus rounded">+</button>
+                  </span>
+                  <span class="total">8$</span>
+                </div>
+                <button class="remove rounded danger">&times;</button>
+              </div>
+            </li>
+          </ul>
+          <footer>
+            <div class="checkout">
+              <button>
+                Check out <i class="fas fa-arrow-right right"></i>
+              </button>
+            </div>
+            <div class="total"><strong>Total</strong><span>12$</span></div>
+          </footer>
+        </div>
+        <div class="mask"></div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div id="todays-deals" class="section">
+          <h3>Today's Deals</h3>
+          <div class="slider-wrapper">
+            <div class="slider items">
+              <div class="wrapper">
+                <div class="item slide foot">
+                  <figure>
+                    <img
+                      src="images/product-1-thumb.jpg"
+                      alt="H.E.B Brown Sugar photo thumb"
+                    />
+                  </figure>
+                  <h4>H.E.B Brown Sugar</h4>
+                  <div class="specs">200g</div>
+                  <div class="price discounted">
+                    <span>8$</span> - <span>6$</span>
+                  </div>
+                  <div class="rate">
+                    <img
+                      src="images/star.svg"
+                      style="width: 14px;"
+                      alt="star"
+                    />
+                    <img
+                      src="images/star.svg"
+                      style="width: 14px;"
+                      alt="star"
+                    />
+                    <img
+                      src="images/star.svg"
+                      style="width: 14px;"
+                      alt="star"
+                    />
+                    <img
+                      src="images/star.svg"
+                      style="width: 14px;"
+                      alt="star"
+                    />
+                    <img
+                      src="images/half-star.svg"
+                      style="width: 14px;"
+                      alt="half-star"
+                    />
+                    <span>201</span>
+                  </div>
+                  <footer>
+                    <div class="popup-wrap click">
+                      <div class="more-options btn popup-trigger">
+                        <span class="icon"></span>
+                      </div>
+                      <div class="popup right card">
+                        <form action="">
+                          <div class="field">
+                            <label>Size:</label>
+                            <select name="size" class="sm">
+                              <option value="small">Small</option>
+                              <option value="medium">Medium</option>
+                            </select>
+                          </div>
+                          <div class="field">
+                            <label>Type:</label>
+                            <select name="size" class="sm">
+                              <option value="type-1">Type 1</option>
+                              <option value="type-2">Type 2</option>
+                            </select>
+                          </div>
+                          <button class="sm right">
+                            <i class="fas fa-check"></i>
+                          </button>
+                        </form>
+                      </div>
+                    </div>
+                    <button>
+                      <svg
+                        class="left"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 576 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z"
+                        ></path>
+                      </svg>
+                      Add
+                    </button>
+                  </footer>
+                </div>
+                <div class="item slide foot">
+                  <figure>
+                    <img
+                      src="images/product-1-thumb.jpg"
+                      alt="H.E.B Brown Sugar photo thumb"
+                    />
+                  </figure>
+                  <h4>Hand & Shoulders Shampoo</h4>
+                  <div class="specs">Medium | Smoth & silky Anti-dandraff</div>
+                  <div class="price discounted">
+                    <span>8$</span> - <span>6$</span>
+                  </div>
+                  <div class="rate">
+                    <img
+                      src="images/star.svg"
+                      style="width: 14px;"
+                      alt="star"
+                    />
+                    <img
+                      src="images/star.svg"
+                      style="width: 14px;"
+                      alt="star"
+                    />
+                    <img
+                      src="images/star.svg"
+                      style="width: 14px;"
+                      alt="star"
+                    />
+                    <img
+                      src="images/star.svg"
+                      style="width: 14px;"
+                      alt="star"
+                    />
+                    <img
+                      src="images/half-star.svg"
+                      style="width: 14px;"
+                      alt="half-star"
+                    />
+                    <span>201</span>
+                  </div>
+                  <footer>
+                    <div class="popup-wrap click">
+                      <div class="more-options btn popup-trigger">
+                        <span class="icon"></span>
+                      </div>
+                      <div class="popup right card">
+                        <form action="">
+                          <div class="field">
+                            <label>Size:</label>
+                            <select name="size" class="sm">
+                              <option value="small">Small</option>
+                              <option value="medium">Medium</option>
+                            </select>
+                          </div>
+                          <div class="field">
+                            <label>Type:</label>
+                            <select name="size" class="sm">
+                              <option value="type-1">Type 1</option>
+                              <option value="type-2">Type 2</option>
+                            </select>
+                          </div>
+                          <button class="sm right">
+                            <i class="fas fa-check"></i>
+                          </button>
+                        </form>
+                      </div>
+                    </div>
+                    <button>
+                      <svg
+                        class="left"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 576 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z"
+                        ></path>
+                      </svg>
+                      Add
+                    </button>
+                  </footer>
+                </div>
+                <div class="item slide foot">
+                  <figure>
+                    <img
+                      src="images/product-1-thumb.jpg"
+                      alt="H.E.B Brown Sugar photo thumb"
+                    />
+                  </figure>
+                  <h4>Hand & Shoulders Shampoo</h4>
+                  <div class="specs">Medium | Smoth & silky Anti-dandraff</div>
+                  <div class="price discounted">
+                    <span>8$</span> - <span>6$</span>
+                  </div>
+                  <div class="rate">
+                    <img
+                      src="images/star.svg"
+                      style="width: 14px;"
+                      alt="star"
+                    />
+                    <img
+                      src="images/star.svg"
+                      style="width: 14px;"
+                      alt="star"
+                    />
+                    <img
+                      src="images/star.svg"
+                      style="width: 14px;"
+                      alt="star"
+                    />
+                    <img
+                      src="images/star.svg"
+                      style="width: 14px;"
+                      alt="star"
+                    />
+                    <img
+                      src="images/half-star.svg"
+                      style="width: 14px;"
+                      alt="half-star"
+                    />
+                    <span>201</span>
+                  </div>
+                  <footer>
+                    <div class="popup-wrap click">
+                      <div class="more-options btn popup-trigger">
+                        <span class="icon"></span>
+                      </div>
+                      <div class="popup right card">
+                        <form action="">
+                          <div class="field">
+                            <label>Size:</label>
+                            <select name="size" class="sm">
+                              <option value="small">Small</option>
+                              <option value="medium">Medium</option>
+                            </select>
+                          </div>
+                          <div class="field">
+                            <label>Type:</label>
+                            <select name="size" class="sm">
+                              <option value="type-1">Type 1</option>
+                              <option value="type-2">Type 2</option>
+                            </select>
+                          </div>
+                          <button class="sm right">
+                            <i class="fas fa-check"></i>
+                          </button>
+                        </form>
+                      </div>
+                    </div>
+                    <button>
+                      <svg
+                        class="left"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 576 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z"
+                        ></path>
+                      </svg>
+                      Add
+                    </button>
+                  </footer>
+                </div>
+                <div class="item slide foot">
+                  <figure>
+                    <img
+                      src="images/product-1-thumb.jpg"
+                      alt="H.E.B Brown Sugar photo thumb"
+                    />
+                  </figure>
+                  <h4>Hand & Shoulders Shampoo</h4>
+                  <div class="specs">Medium | Smoth & silky Anti-dandraff</div>
+                  <div class="price discounted">
+                    <span>8$</span> - <span>6$</span>
+                  </div>
+                  <div class="rate">
+                    <img
+                      src="images/star.svg"
+                      style="width: 14px;"
+                      alt="star"
+                    />
+                    <img
+                      src="images/star.svg"
+                      style="width: 14px;"
+                      alt="star"
+                    />
+                    <img
+                      src="images/star.svg"
+                      style="width: 14px;"
+                      alt="star"
+                    />
+                    <img
+                      src="images/star.svg"
+                      style="width: 14px;"
+                      alt="star"
+                    />
+                    <img
+                      src="images/half-star.svg"
+                      style="width: 14px;"
+                      alt="half-star"
+                    />
+                    <span>201</span>
+                  </div>
+                  <footer>
+                    <div class="popup-wrap click">
+                      <div class="more-options btn popup-trigger">
+                        <span class="icon"></span>
+                      </div>
+                      <div class="popup right card">
+                        <form action="">
+                          <div class="field">
+                            <label>Size:</label>
+                            <select name="size" class="sm">
+                              <option value="small">Small</option>
+                              <option value="medium">Medium</option>
+                            </select>
+                          </div>
+                          <div class="field">
+                            <label>Type:</label>
+                            <select name="size" class="sm">
+                              <option value="type-1">Type 1</option>
+                              <option value="type-2">Type 2</option>
+                            </select>
+                          </div>
+                          <button class="sm right">
+                            <i class="fas fa-check"></i>
+                          </button>
+                        </form>
+                      </div>
+                    </div>
+                    <button>
+                      <svg
+                        class="left"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 576 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z"
+                        ></path>
+                      </svg>
+                      Add
+                    </button>
+                  </footer>
+                </div>
+                <div class="item slide foot">
+                  <figure>
+                    <img
+                      src="images/product-1-thumb.jpg"
+                      alt="H.E.B Brown Sugar photo thumb"
+                    />
+                  </figure>
+                  <h4>Hand & Shoulders Shampoo</h4>
+                  <div class="specs">Medium | Smoth & silky Anti-dandraff</div>
+                  <div class="price discounted">
+                    <span>8$</span> - <span>6$</span>
+                  </div>
+                  <div class="rate">
+                    <img
+                      src="images/star.svg"
+                      style="width: 14px;"
+                      alt="star"
+                    />
+                    <img
+                      src="images/star.svg"
+                      style="width: 14px;"
+                      alt="star"
+                    />
+                    <img
+                      src="images/star.svg"
+                      style="width: 14px;"
+                      alt="star"
+                    />
+                    <img
+                      src="images/star.svg"
+                      style="width: 14px;"
+                      alt="star"
+                    />
+                    <img
+                      src="images/half-star.svg"
+                      style="width: 14px;"
+                      alt="half-star"
+                    />
+                    <span>201</span>
+                  </div>
+                  <footer>
+                    <div class="popup-wrap click">
+                      <div class="more-options btn popup-trigger">
+                        <span class="icon"></span>
+                      </div>
+                      <div class="popup card">
+                        <form action="">
+                          <div class="field">
+                            <label>Size:</label>
+                            <select name="size" class="sm">
+                              <option value="small">Small</option>
+                              <option value="medium">Medium</option>
+                            </select>
+                          </div>
+                          <div class="field">
+                            <label>Type:</label>
+                            <select name="size" class="sm">
+                              <option value="type-1">Type 1</option>
+                              <option value="type-2">Type 2</option>
+                            </select>
+                          </div>
+                          <button class="sm right">
+                            <i class="fas fa-check"></i>
+                          </button>
+                        </form>
+                      </div>
+                    </div>
+                    <button>
+                      <svg
+                        class="left"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 576 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z"
+                        ></path>
+                      </svg>
+                      Add
+                    </button>
+                  </footer>
+                </div>
+                <div class="item slide foot">
+                  <figure>
+                    <img
+                      src="images/product-1-thumb.jpg"
+                      alt="H.E.B Brown Sugar photo thumb"
+                    />
+                  </figure>
+                  <h4>Hand & Shoulders Shampoo</h4>
+                  <div class="specs">Medium | Smoth & silky Anti-dandraff</div>
+                  <div class="price discounted">
+                    <span>8$</span> - <span>6$</span>
+                  </div>
+                  <div class="rate">
+                    <img
+                      src="images/star.svg"
+                      style="width: 14px;"
+                      alt="star"
+                    />
+                    <img
+                      src="images/star.svg"
+                      style="width: 14px;"
+                      alt="star"
+                    />
+                    <img
+                      src="images/star.svg"
+                      style="width: 14px;"
+                      alt="star"
+                    />
+                    <img
+                      src="images/star.svg"
+                      style="width: 14px;"
+                      alt="star"
+                    />
+                    <img
+                      src="images/half-star.svg"
+                      style="width: 14px;"
+                      alt="half-star"
+                    />
+                    <span>201</span>
+                  </div>
+                  <footer>
+                    <div class="popup-wrap click">
+                      <div class="more-options btn popup-trigger">
+                        <span class="icon"></span>
+                      </div>
+                      <div class="popup card">
+                        <form action="">
+                          <div class="field">
+                            <label>Size:</label>
+                            <select name="size" class="sm">
+                              <option value="small">Small</option>
+                              <option value="medium">Medium</option>
+                            </select>
+                          </div>
+                          <div class="field">
+                            <label>Type:</label>
+                            <select name="size" class="sm">
+                              <option value="type-1">Type 1</option>
+                              <option value="type-2">Type 2</option>
+                            </select>
+                          </div>
+                          <button class="sm right">
+                            <i class="fas fa-check"></i>
+                          </button>
+                        </form>
+                      </div>
+                    </div>
+                    <button>
+                      <svg
+                        class="left"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 576 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z"
+                        ></path>
+                      </svg>
+                      Add
+                    </button>
+                  </footer>
+                </div>
+                <div class="item slide foot">
+                  <figure>
+                    <img
+                      src="images/product-1-thumb.jpg"
+                      alt="H.E.B Brown Sugar photo thumb"
+                    />
+                  </figure>
+                  <h4>Hand & Shoulders Shampoo</h4>
+                  <div class="specs">Medium | Smoth & silky Anti-dandraff</div>
+                  <div class="price discounted">
+                    <span>8$</span> - <span>6$</span>
+                  </div>
+                  <div class="rate">
+                    <img
+                      src="images/star.svg"
+                      style="width: 14px;"
+                      alt="star"
+                    />
+                    <img
+                      src="images/star.svg"
+                      style="width: 14px;"
+                      alt="star"
+                    />
+                    <img
+                      src="images/star.svg"
+                      style="width: 14px;"
+                      alt="star"
+                    />
+                    <img
+                      src="images/star.svg"
+                      style="width: 14px;"
+                      alt="star"
+                    />
+                    <img
+                      src="images/half-star.svg"
+                      style="width: 14px;"
+                      alt="half-star"
+                    />
+                    <span>201</span>
+                  </div>
+                  <footer>
+                    <div class="popup-wrap click">
+                      <div class="more-options btn popup-trigger">
+                        <span class="icon"></span>
+                      </div>
+                      <div class="popup card">
+                        <form action="">
+                          <div class="field">
+                            <label>Size:</label>
+                            <select name="size" class="sm">
+                              <option value="small">Small</option>
+                              <option value="medium">Medium</option>
+                            </select>
+                          </div>
+                          <div class="field">
+                            <label>Type:</label>
+                            <select name="size" class="sm">
+                              <option value="type-1">Type 1</option>
+                              <option value="type-2">Type 2</option>
+                            </select>
+                          </div>
+                          <button class="sm right">
+                            <i class="fas fa-check"></i>
+                          </button>
+                        </form>
+                      </div>
+                    </div>
+                    <button>
+                      <svg
+                        class="left"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 576 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z"
+                        ></path>
+                      </svg>
+                      Add
+                    </button>
+                  </footer>
+                </div>
+                <div class="item slide foot">
+                  <figure>
+                    <img
+                      src="images/product-1-thumb.jpg"
+                      alt="H.E.B Brown Sugar photo thumb"
+                    />
+                  </figure>
+                  <h4>Hand & Shoulders Shampoo</h4>
+                  <div class="specs">Medium | Smoth & silky Anti-dandraff</div>
+                  <div class="price discounted">
+                    <span>8$</span> - <span>6$</span>
+                  </div>
+                  <div class="rate">
+                    <img
+                      src="images/star.svg"
+                      style="width: 14px;"
+                      alt="star"
+                    />
+                    <img
+                      src="images/star.svg"
+                      style="width: 14px;"
+                      alt="star"
+                    />
+                    <img
+                      src="images/star.svg"
+                      style="width: 14px;"
+                      alt="star"
+                    />
+                    <img
+                      src="images/star.svg"
+                      style="width: 14px;"
+                      alt="star"
+                    />
+                    <img
+                      src="images/half-star.svg"
+                      style="width: 14px;"
+                      alt="half-star"
+                    />
+                    <span>201</span>
+                  </div>
+                  <footer>
+                    <div class="popup-wrap click">
+                      <div class="more-options btn popup-trigger">
+                        <span class="icon"></span>
+                      </div>
+                      <div class="popup card">
+                        <form action="">
+                          <div class="field">
+                            <label>Size:</label>
+                            <select name="size" class="sm">
+                              <option value="small">Small</option>
+                              <option value="medium">Medium</option>
+                            </select>
+                          </div>
+                          <div class="field">
+                            <label>Type:</label>
+                            <select name="size" class="sm">
+                              <option value="type-1">Type 1</option>
+                              <option value="type-2">Type 2</option>
+                            </select>
+                          </div>
+                          <button class="sm right">
+                            <i class="fas fa-check"></i>
+                          </button>
+                        </form>
+                      </div>
+                    </div>
+                    <button>
+                      <svg
+                        class="left"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 576 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z"
+                        ></path>
+                      </svg>
+                      Add
+                    </button>
+                  </footer>
+                </div>
+                <div class="item slide foot">
+                  <figure>
+                    <img
+                      src="images/product-1-thumb.jpg"
+                      alt="H.E.B Brown Sugar photo thumb"
+                    />
+                  </figure>
+                  <h4>Hand & Shoulders Shampoo</h4>
+                  <div class="specs">Medium | Smoth & silky Anti-dandraff</div>
+                  <div class="price discounted">
+                    <span>8$</span> - <span>6$</span>
+                  </div>
+                  <div class="rate">
+                    <img
+                      src="images/star.svg"
+                      style="width: 14px;"
+                      alt="star"
+                    />
+                    <img
+                      src="images/star.svg"
+                      style="width: 14px;"
+                      alt="star"
+                    />
+                    <img
+                      src="images/star.svg"
+                      style="width: 14px;"
+                      alt="star"
+                    />
+                    <img
+                      src="images/star.svg"
+                      style="width: 14px;"
+                      alt="star"
+                    />
+                    <img
+                      src="images/half-star.svg"
+                      style="width: 14px;"
+                      alt="half-star"
+                    />
+                    <span>201</span>
+                  </div>
+                  <footer>
+                    <div class="popup-wrap click">
+                      <div class="more-options btn popup-trigger">
+                        <span class="icon"></span>
+                      </div>
+                      <div class="popup card">
+                        <form action="">
+                          <div class="field">
+                            <label>Size:</label>
+                            <select name="size" class="sm">
+                              <option value="small">Small</option>
+                              <option value="medium">Medium</option>
+                            </select>
+                          </div>
+                          <div class="field">
+                            <label>Type:</label>
+                            <select name="size" class="sm">
+                              <option value="type-1">Type 1</option>
+                              <option value="type-2">Type 2</option>
+                            </select>
+                          </div>
+                          <button class="sm right">
+                            <i class="fas fa-check"></i>
+                          </button>
+                        </form>
+                      </div>
+                    </div>
+                    <button>
+                      <svg
+                        class="left"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 576 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z"
+                        ></path>
+                      </svg>
+                      Add
+                    </button>
+                  </footer>
+                </div>
+                <div class="item slide foot">
+                  <figure>
+                    <img
+                      src="images/product-1-thumb.jpg"
+                      alt="H.E.B Brown Sugar photo thumb"
+                    />
+                  </figure>
+                  <h4>Hand & Shoulders Shampoo</h4>
+                  <div class="specs">Medium | Smoth & silky Anti-dandraff</div>
+                  <div class="price discounted">
+                    <span>8$</span> - <span>6$</span>
+                  </div>
+                  <div class="rate">
+                    <img
+                      src="images/star.svg"
+                      style="width: 14px;"
+                      alt="star"
+                    />
+                    <img
+                      src="images/star.svg"
+                      style="width: 14px;"
+                      alt="star"
+                    />
+                    <img
+                      src="images/star.svg"
+                      style="width: 14px;"
+                      alt="star"
+                    />
+                    <img
+                      src="images/star.svg"
+                      style="width: 14px;"
+                      alt="star"
+                    />
+                    <img
+                      src="images/half-star.svg"
+                      style="width: 14px;"
+                      alt="half-star"
+                    />
+                    <span>201</span>
+                  </div>
+                  <footer>
+                    <div class="popup-wrap click">
+                      <div class="more-options btn popup-trigger">
+                        <span class="icon"></span>
+                      </div>
+                      <div class="popup card">
+                        <form action="">
+                          <div class="field">
+                            <label>Size:</label>
+                            <select name="size" class="sm">
+                              <option value="small">Small</option>
+                              <option value="medium">Medium</option>
+                            </select>
+                          </div>
+                          <div class="field">
+                            <label>Type:</label>
+                            <select name="size" class="sm">
+                              <option value="type-1">Type 1</option>
+                              <option value="type-2">Type 2</option>
+                            </select>
+                          </div>
+                          <button class="sm right">
+                            <i class="fas fa-check"></i>
+                          </button>
+                        </form>
+                      </div>
+                    </div>
+                    <button>
+                      <svg
+                        class="left"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 576 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z"
+                        ></path>
+                      </svg>
+                      Add
+                    </button>
+                  </footer>
+                </div>
+                <div class="item slide foot">
+                  <figure>
+                    <img
+                      src="images/product-1-thumb.jpg"
+                      alt="H.E.B Brown Sugar photo thumb"
+                    />
+                  </figure>
+                  <h4>Hand & Shoulders Shampoo</h4>
+                  <div class="specs">Medium | Smoth & silky Anti-dandraff</div>
+                  <div class="price discounted">
+                    <span>8$</span> - <span>6$</span>
+                  </div>
+                  <div class="rate">
+                    <img
+                      src="images/star.svg"
+                      style="width: 14px;"
+                      alt="star"
+                    />
+                    <img
+                      src="images/star.svg"
+                      style="width: 14px;"
+                      alt="star"
+                    />
+                    <img
+                      src="images/star.svg"
+                      style="width: 14px;"
+                      alt="star"
+                    />
+                    <img
+                      src="images/star.svg"
+                      style="width: 14px;"
+                      alt="star"
+                    />
+                    <img
+                      src="images/half-star.svg"
+                      style="width: 14px;"
+                      alt="half-star"
+                    />
+                    <span>201</span>
+                  </div>
+                  <footer>
+                    <div class="popup-wrap click">
+                      <div class="more-options btn popup-trigger">
+                        <span class="icon"></span>
+                      </div>
+                      <div class="popup card">
+                        <form action="">
+                          <div class="field">
+                            <label>Size:</label>
+                            <select name="size" class="sm">
+                              <option value="small">Small</option>
+                              <option value="medium">Medium</option>
+                            </select>
+                          </div>
+                          <div class="field">
+                            <label>Type:</label>
+                            <select name="size" class="sm">
+                              <option value="type-1">Type 1</option>
+                              <option value="type-2">Type 2</option>
+                            </select>
+                          </div>
+                          <button class="sm right">
+                            <i class="fas fa-check"></i>
+                          </button>
+                        </form>
+                      </div>
+                    </div>
+                    <button>
+                      <svg
+                        class="left"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 576 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z"
+                        ></path>
+                      </svg>
+                      Add
+                    </button>
+                  </footer>
+                </div>
+              </div>
+            </div>
+            <nav>
+              <div class="left disabled">
+                <i class="fas fa-chevron-left"></i>
+              </div>
+              <div class="right"><i class="fas fa-chevron-right"></i></div>
+            </nav>
+          </div>
+        </div>
+
+        <div id="categories" class="section">
+          <h3>Today's Deals</h3>
+          <div class="slider-wrapper">
+            <div class="slider items">
+              <div class="wrapper">
+                <div class="item slide category">
+                  <figure>
+                    <img
+                      src="images/categories/category-1.png"
+                      alt="Canned Food"
+                    />
+                  </figure>
+                  <h4>Canned Food</h4>
+                </div>
+                <div class="item slide category">
+                  <figure class="rounded">
+                    <img src="images/categories/category-2.png" alt="Eggs" />
+                  </figure>
+                  <h4>Eggs</h4>
+                </div>
+                <div class="item slide category">
+                  <figure class="rounded">
+                    <img
+                      src="images/categories/category-3.png"
+                      alt="Vegetables"
+                    />
+                  </figure>
+                  <h4>Vegetables</h4>
+                </div>
+                <div class="item slide category">
+                  <figure class="rounded">
+                    <img
+                      src="images/categories/category-4.png"
+                      alt="fish and see food"
+                    />
+                  </figure>
+                  <h4>Fish &amp; Sea Food</h4>
+                </div>
+                <div class="item slide category">
+                  <figure class="rounded">
+                    <img
+                      src="images/categories/category-5.png"
+                      alt="cheese and butter"
+                    />
+                  </figure>
+                  <h4>Cheese &amp; Butter</h4>
+                </div>
+                <div class="item slide category">
+                  <figure class="rounded">
+                    <img src="images/categories/category-6.png" alt="bakery" />
+                  </figure>
+                  <h4>Bakery</h4>
+                </div>
+                <div class="item slide category">
+                  <figure class="rounded">
+                    <img src="images/categories/category-7.png" alt="bakery" />
+                  </figure>
+                  <h4>Bakery</h4>
+                </div>
+                <div class="item slide category">
+                  <figure class="rounded">
+                    <img src="images/categories/category-8.png" alt="bakery" />
+                  </figure>
+                  <h4>Bakery</h4>
+                </div>
+                <div class="item slide category">
+                  <figure class="rounded">
+                    <img src="images/categories/category-9.png" alt="bakery" />
+                  </figure>
+                  <h4>Bakery</h4>
+                </div>
+                <div class="item slide category">
+                  <figure class="rounded">
+                    <img src="images/categories/category-11.png" alt="bakery" />
+                  </figure>
+                  <h4>Bakery</h4>
+                </div>
+                <div class="item slide category">
+                  <figure class="rounded">
+                    <img src="images/categories/category-12.png" alt="bakery" />
+                  </figure>
+                  <h4>Bakery</h4>
+                </div>
+                <div class="item slide category">
+                  <figure class="rounded">
+                    <img src="images/categories/category-13.png" alt="bakery" />
+                  </figure>
+                  <h4>Bakery</h4>
+                </div>
+              </div>
+            </div>
+            <nav>
+              <div class="left disabled">
+                <i class="fas fa-chevron-left"></i>
+              </div>
+              <div class="right"><i class="fas fa-chevron-right"></i></div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <a href="#">Condition of use</a>
+      <a href="#">Privacy Policy</a>
+      <span>&copy; 2020 grocery.com inc.</span>
+    </footer>
+    <script src="js/popup.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/tree-menu.js"></script>
+  </body>
+</html>
